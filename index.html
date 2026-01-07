@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automação com ia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Bem-vindo ao site de Automação com IA</h1>
+        
+    </header>
+
+
+    <headers>
+
+                <section id="sobrenos">
+            <h1>Sobre Nós</h1>
+            <p>Este site é dedicado a explorar as possibilidades da automação utilizando inteligência artificial epecialista em analista de venda. Sua tarefa : coletar dados:exporta dados brutos de multiplas fontes CRM, planilhas, sistemas de pedidos. Unir dados em uma unica planilha, corrige inconsistências Nomes,categoria,data. Realisar operações manuais para obter KPIS. Crescimento mensal,meta vs realizados,ticket medio, conversão por canal. identificar tendências,picos, quedas e pontos de atenção. Ccriar comparações equipe vs equipe, periodo vs periodo, produto vs produto. escreve resume executivo com conclusões e  insighs  acionáveis. criar visualizações gráficos,tabelas e padroniza o layout do relato final PPt, ou Doc.uma criação de prompts bem estruturados permite automatizar grande parte do processo, diminuira o esforço manual e acelerando a produção de relatórios garantindo maior consistência nos resultados.</p>
+        </section>
+        <section id="nossosservicos">
+            <h2>Serviços</h2>
+            <ul>
+                <li href="#contato" id="a"  >Consultoria em IA</li>
+                <li id="b">Desenvolvimento de soluções automatizadas</li>
+                <li id="c">Treinamento e workshops</li>
+                  <li id="d" >contato</li>
+            </ul>
+        </section>
+
+        <section id="contato1">
+                    <h6>Contato</h6>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                
+                <button type="submit">Enviar</button>
+
+                </section>
+            </form>
+
+        <section id="projetos">
+            <h3>projetos!</h2>
+                <p>Faça a automação trabalhar para você! Com a automação de tarefas rotineiras, você pode economizar tempo e aumentar a eficiência. Desde o gerenciamento de e-mails até a organização de dados, deixe que a tecnologia cuide do trabalho pesado enquanto você se concentra no que realmente importa.</p>
+
+        </section> 
+
+
+    </headers>
+
+
+
+
+
+
+    <main>
+        <section id="fase1">
+
+        <article id="extraçãodedados">
+            <h2>extração de dados</h2>
+            <p> estruturação de dados</p>
+            <label for="extraçãodedados"></label>
+            <input type="" placeholder="Insira os dados brutos aqui">
+            <button onclick="processarDados()">Processar Dados</button>
+            <p id="resultado1"></p>
+            <p id="download">download link: <a href="relatorio_extracao_dados.txt" download>Baixar Relatório de Extração de Dados</a> </p>
+        </article>
+
+        <article id="limpezadedados">
+            <strong>padronização e limpeza de dados</strong>
+                    <p>Transforme dados brutos em tabela estruturada</p>
+                    <textarea id="dadosLimpeza" placeholder="Cole seus dados de extraçãodedados aqui (separados por vírgula ou tabulação)"></textarea>
+                <label for="uploadArquivo">Enviar Documento:</label>
+                <input type="file" id="uploadArquivo" name="uploadArquivo" accept=".txt,.csv,.xlsx,.pdf">
+                <button onclick="enviarDocumento()">Enviar Documento</button>
+                 <button onclick="limparDados()">Estruturar Dados</button>
+                    <div id="resultado3"></div>
+                    <p id="download3">download link: <a href="relatorio_limpeza_dados.txt" download>Baixar Relatório de Limpeza</a></p>
+        </article>
+
+        <article id="dataseteconsolidação">
+            <h2>criação de dataset e consolidação.</h2>
+            <p>Obtenha insights valiosos a partir dos seus dados estruturados</p>
+            <textarea id="consolidação" placeholder="Cole seus dados estruturados aqui"></textarea>
+             <label for="uploadArquivo">Enviar Documento:</label>
+                <input type="file" id="uploadArquivo" name="uploadArquivo" accept=".txt,.csv,.xlsx,.pdf">
+                <button onclick="enviarDocumento()">Enviar Documento</button>
+            <button onclick="consolidardataset()">consolidar dataset</button>
+            <div id="resultado2"></div>
+            <p id="download2">download link: <a href="relatorio_analise_dados.txt" download>Baixar Relatório de Análise</a></p>
+
+
+        </article>
+        </section>
+
+        <section id="fase2">
+        <article id="analisedeKPI">
+            <h4>análise de KPI</h4>
+            <p>Calcule e interprete KPIs essenciais para o seu negócio</p>
+            <textarea id="kpi" placeholder="Cole seus dados datasetconsolidação aqui"></textarea>
+             <label for="uploadArquivo">Enviar Documento:</label>
+                <input type="file" id="uploadArquivo" name="uploadArquivo" accept=".txt,.csv,.xlsx,.pdf">
+                <button onclick="enviarDocumento()">Enviar Documento</button>
+            <button onclick="analisarKPI()">Analisar KPIs</button>
+            <div id="resultadoKPI"></div>
+            <p id="downloadKPI">download link: <a href="relatorio_kpi_dados.txt" download>Baixar Relatório de KPIs</a></p>
+
+        </article>
+
+       <article id="analisededesempenhovsmeta">
+            <h4>análise de desempenho vs meta</h4>
+            <p>Compare o desempenho real com as metas estabelecidas</p>
+            <textarea id="desempenho" placeholder="Cole seus dados de de analise de kpi e metas ou dados especificos aqui"></textarea>
+             <label for="uploadArquivo">Enviar Documento:</label>
+                <input type="file" id="uploadArquivo" name="uploadArquivo" accept=".txt,.csv,.xlsx,.pdf">
+                <button onclick="enviarDocumento()">Enviar Documento</button>
+            <button onclick="analisarDesempenho()">Analisar Desempenho vs Meta</button>
+            <div id="resultadoDesempenho"></div>
+            <p id="downloadDesempenho">download link: <a href="relatorio_desempenho_meta.txt" download>Baixar Relatório de Desempenho vs Meta</a></p>
+
+
+       </article>
+
+       <article id="taxasdecrescimentoevarição">
+        <h4>Taxas de crescimento e variação
+
+        </h4>
+                    <textarea id="desempenho" placeholder="Cole o resultado do desempenho vs metas ou dados especificos aqui"></textarea>
+             <label for="uploadArquivo">Enviar Documento:</label>
+                <input type="file" id="uploadArquivo" name="uploadArquivo" accept=".txt,.csv,.xlsx,.pdf">
+                <button onclick="enviarDocumento()">Enviar Documento</button>
+            <button onclick="analisarDesempenho()">Analisar Desempenho vs Meta</button>
+            <div id="resultadoCrescimento"></div>
+            <p id="downloadCrescimento">download link: <a href="relatorio_crescimento_variacao.txt" download>Baixar Relatório de Crescimento e Variação</a></p>
+
+       </article>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <p>&copy; 2024 Automação com IA. Todos os direitos reservados.</p>
+    </footer>
+    
+</body>
+</html>

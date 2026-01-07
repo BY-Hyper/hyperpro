@@ -1,0 +1,339 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --electric-blue: #1f2727;
+    --bright-white: #f0f0f0;
+    --primary-green: #84b454;
+    --light-bg: #fcffff;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: var(--light-bg);
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background: linear-gradient(135deg, var(--electric-blue), #29532e);
+    color: var(--bright-white);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px var(--shadow);
+    border-radius: 0 0 20px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+    transition: transform 0.3s ease;
+}
+
+header:hover h1 {
+    transform: scale(1.02);
+}
+
+
+headers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+section {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+#sobrenos {
+    flex: 2;
+    min-width: 300px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-left: 5px solid var(--primary-green);
+}
+
+#sobrenos h1 {
+    color: var(--electric-blue);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--primary-green);
+    padding-bottom: 0.5rem;
+}
+
+#nossosservicos {
+    flex: 1;
+    min-width: 250px;
+}
+
+#nossosservicos h2 {
+    color: var(--electric-blue);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+#nossosservicos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nossosservicos li {
+    background: white;
+    margin: 0.8rem 0;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-green);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px var(--shadow);
+}
+
+#nossosservicos li:hover {
+    background: var(--primary-green);
+    color: white;
+    transform: translateX(10px);
+}
+
+/* CONTATO */
+#contato1 {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+#contato1 h6 {
+    font-size: 1.5rem;
+    color: var(--electric-blue);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+#contato1 form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contato1 input,
+#contato1 textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+#contato1 input:focus,
+#contato1 textarea:focus {
+    outline: none;
+    border-color: var(--primary-green);
+}
+
+#contato1 button {
+    background: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+#contato1 button:hover {
+    background: #6d9944;
+}
+
+#projetos {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#projetos h3 {
+    color: var(--electric-blue);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#fase1, #fase2 {
+    display: contents;
+}
+
+
+article {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px var(--shadow);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--primary-green);
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+article h2, article h4 {
+    color: var(--electric-blue);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+article textarea,
+article input[type="text"],
+article input[type="file"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+article button {
+    background: var(--electric-blue);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    margin: 0.5rem 0.2rem;
+}
+
+article button:hover {
+    background: var(--primary-green);
+}
+
+article strong {
+    color: var(--electric-blue);
+    font-size: 1.2rem;
+}
+
+#download, #download2, #download3, #downloadKPI, #downloadDesempenho {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+#download a {
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#download a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: var(--electric-blue);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-radius: 20px 20px 0 0;
+}
+
+
+@media (max-width: 768px) {
+    headers {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+    
+    main {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    section {
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    article {
+        padding: 1rem;
+    }
+    
+    #nossosservicos li {
+        padding: 0.8rem 1rem;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+#resultado1, #resultado2, #resultado3, #resultadoKPI, #resultadoDesempenho {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    border-left: 4px solid var(--primary-green);
+    
+}
+#resultado1 strong, #resultado2 strong, #resultado3 strong, #resultadoKPI strong, #resultadoDesempenho strong {
+    color: var(--electric-blue);
+}
